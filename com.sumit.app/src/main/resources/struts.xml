@@ -6,10 +6,11 @@
 <struts>
  
     <constant name="struts.devMode" value="true" />
- 
+ 	<constant name="" value=""></constant>
     <package name="basicstruts2" extends="struts-default">
  
         <action name="index">
+        <interceptor-ref name="timer"></interceptor-ref>
             <result>/index.jsp</result>
         </action>
  
